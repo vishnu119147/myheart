@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Special Surprises ❤️</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="surprises.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="heart-container">
+            <div class="heart"></div>
+        </div>
+
+        <header class="surprises-header">
+            <h1 class="title">Special Surprises</h1>
+            <p class="subtitle">Just for you, my amazing Tejuuu</p>
+            <a href="index.html" class="back-button">
+                <i class="fas fa-arrow-left"></i> Back to Home
+            </a>
+        </header>
+
+        <main class="surprises-content">
+            <section class="surprise-card" id="music-surprise">
+                <div class="card-header">
+                    <h2><i class="fas fa-music"></i> Our Special Song</h2>
+                    <button class="reveal-button" onclick="revealSurprise('music')">
+                        Reveal Surprise
+                    </button>
+                </div>
+                <div class="card-content hidden">
+                    <div class="music-player">
+                        <div class="player-content">
+                            <div class="album-cover">
+                                <i class="fas fa-music"></i>
+                                <div class="vinyl-ring"></div>
+                            </div>
+                            <div class="player-controls">
+                                <button class="play-button" onclick="toggleMusic()">
+                                    <i class="fas fa-play"></i>
+                                </button>
+                                <div class="song-info">
+                                    <h3>A Song for you</h3>
+                                    <p>Click play to hear our special melody</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="lyrics-container">
+                            <div class="lyrics">
+                                <p class="lyric-line">Every moment with you is a treasure...</p>
+                                <p class="lyric-line">Your friendship makes my heart sing...</p>
+                                <p class="lyric-line">Together we create beautiful memories...</p>
+                                <p class="lyric-line">You're the best friend anyone could ask for...</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="surprise-card" id="message-surprise">
+                <div class="card-header">
+                    <h2><i class="fas fa-envelope"></i> Special Message</h2>
+                    <button class="reveal-button" onclick="revealSurprise('message')">
+                        Reveal Surprise
+                    </button>
+                </div>
+                <div class="card-content hidden">
+                    <div class="message-box">
+                        <div class="message-animation"></div>
+                        <div class="message-text">
+                            <h3>To My Amazing Tejuuu</h3>
+                            <p>You are the most wonderful person anyone could ask for. Your presence has been the greatest gift in my life.</p>
+                            <p>Thank you for always being there, for your endless support, and for making every moment special.</p>
+                            <p>You deserve all the happiness in the world!</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="surprise-card" id="memory-surprise">
+                <div class="card-header">
+                    <h2><i class="fas fa-star"></i> Memory Lane</h2>
+                    <button class="reveal-button" onclick="revealSurprise('memory')">
+                        Reveal Surprise
+                    </button>
+                </div>
+                <div class="card-content hidden">
+                    <div class="memory-timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-content">
+                                <div class="timeline-image">
+                                    <img src="pic1.jpg" alt="First Meet">
+                                    <span class="timeline-emoji">💝</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-content">
+                                <div class="timeline-image">
+                                    <img src="pic2.jpg" alt="First Adventure">
+                                    <span class="timeline-emoji">⭐</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-content">
+                                <div class="timeline-image">
+                                    <img src="pic3.jpg" alt="Special Moment">
+                                    <span class="timeline-emoji">😄</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-content">
+                                <div class="timeline-image">
+                                    <img src="pic4.jpg" alt="Beach Day">
+                                    <span class="timeline-emoji">🏖️</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-content">
+                                <div class="timeline-image">
+                                    <img src="pic5.jpg" alt="Movie Night">
+                                    <span class="timeline-emoji">🎬</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-content">
+                                <div class="timeline-image">
+                                    <img src="pic6.jpg" alt="Road Trip">
+                                    <span class="timeline-emoji">🚗</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-content">
+                                <div class="timeline-image">
+                                    <img src="pic7.jpg" alt="Coffee Date">
+                                    <span class="timeline-emoji">☕</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-content">
+                                <div class="timeline-image">
+                                    <img src="pic8.jpg" alt="Birthday Surprise">
+                                    <span class="timeline-emoji">🎂</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-content">
+                                <div class="timeline-image">
+                                    <img src="pic9.jpg" alt="Concert Night">
+                                    <span class="timeline-emoji">🎵</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-content">
+                                <div class="timeline-image">
+                                    <img src="pic10.jpg" alt="Garden Day">
+                                    <span class="timeline-emoji">🌱</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-content">
+                                <div class="timeline-image">
+                                    <img src="pic11.jpg" alt="Garden Day">
+                                    <span class="timeline-emoji">😍</span>
+                                </div>
+                            </div>
+                        </div><div class="timeline-item">
+                            <div class="timeline-content">
+                                <div class="timeline-image">
+                                    <img src="pic12.jpg" alt="Garden Day">
+                                    <span class="timeline-emoji">💝</span>
+                                </div>
+                            </div>
+                        </div><div class="timeline-item">
+                            <div class="timeline-content">
+                                <div class="timeline-image">
+                                    <img src="pic13.jpg" alt="Garden Day">
+                                    <span class="timeline-emoji">❤️</span>
+                                </div>
+                            </div>
+                        </div><div class="timeline-item">
+                            <div class="timeline-content">
+                                <div class="timeline-image">
+                                    <img src="pic14.jpg" alt="Garden Day">
+                                    <span class="timeline-emoji">🌹</span>
+                                </div>
+                            </div>
+                        </div><div class="timeline-item">
+                            <div class="timeline-content">
+                                <div class="timeline-image">
+                                    <img src="pic15.jpg" alt="Garden Day">
+                                    <span class="timeline-emoji">💌</span>
+                                </div>
+                            </div>
+                        </div><div class="timeline-item">
+                            <div class="timeline-content">
+                                <div class="timeline-image">
+                                    <img src="pic16.jpg" alt="Garden Day">
+                                    <span class="timeline-emoji">🐢</span>
+                                </div>
+                            </div>
+                        </div><div class="timeline-item">
+                            <div class="timeline-content">
+                                <div class="timeline-image">
+                                    <img src="pic17.jpg" alt="Garden Day">
+                                    <span class="timeline-emoji">🌱</span>
+                                </div>
+                            </div>
+                        </div><div class="timeline-item">
+                            <div class="timeline-content">
+                                <div class="timeline-image">
+                                    <img src="pic18.jpg" alt="Garden Day">
+                                    <span class="timeline-emoji">👌</span>
+                                </div>
+                            </div>
+                        </div><div class="timeline-item">
+                            <div class="timeline-content">
+                                <div class="timeline-image">
+                                    <img src="pic19.jpg" alt="Garden Day">
+                                    <span class="timeline-emoji">😍</span>
+                                </div>
+                            </div>
+                        </div><div class="timeline-item">
+                            <div class="timeline-content">
+                                <div class="timeline-image">
+                                    <img src="pic20.jpg" alt="Garden Day">
+                                    <span class="timeline-emoji">🌱</span>
+                                </div>
+                            </div>
+                        </div><div class="timeline-item">
+                            <div class="timeline-content">
+                                <div class="timeline-image">
+                                    <img src="pic21.jpg" alt="Garden Day">
+                                    <span class="timeline-emoji">😎</span>
+                                </div>
+                            </div>
+                        </div><div class="timeline-item">
+                            <div class="timeline-content">
+                                <div class="timeline-image">
+                                    <img src="pic22.jpg" alt="Garden Day">
+                                    <span class="timeline-emoji">🌱</span>
+                                </div>
+                            </div>
+                        </div><div class="timeline-item">
+                            <div class="timeline-content">
+                                <div class="timeline-image">
+                                    <img src="pic23.jpg" alt="Garden Day">
+                                    <span class="timeline-emoji">💌</span>
+                                </div>
+                            </div>
+                        </div><div class="timeline-item">
+                            <div class="timeline-content">
+                                <div class="timeline-image">
+                                    <img src="pic24.jpg" alt="Garden Day">
+                                    <span class="timeline-emoji">💝</span>
+                                </div>
+                            </div>
+                        </div><div class="timeline-item">
+                            <div class="timeline-content">
+                                <div class="timeline-image">
+                                    <img src="pic25.jpg" alt="Garden Day">
+                                    <span class="timeline-emoji">❤️</span>
+                                </div>
+                            </div>
+                        </div><div class="timeline-item">
+                            <div class="timeline-content">
+                                <div class="timeline-image">
+                                    <img src="pic26.jpg" alt="Garden Day">
+                                    <span class="timeline-emoji">🥰</span>
+                                </div>
+                            </div>
+                        </div><div class="timeline-item">
+                            <div class="timeline-content">
+                                <div class="timeline-image">
+                                    <img src="pic27.jpg" alt="Garden Day">
+                                    <span class="timeline-emoji">🌱</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="surprise-card" id="love-meter-surprise">
+                <div class="card-header">
+                    <h2><i class="fas fa-heart"></i> Friendship Meter</h2>
+                    <button class="reveal-button" onclick="revealSurprise('love-meter')">
+                        Reveal Surprise
+                    </button>
+                </div>
+                <div class="card-content hidden">
+                    <div class="love-meter-container">
+                        <div class="love-meter">
+                            <div class="meter-fill"></div>
+                        </div>
+                        <p class="meter-text">Loading our amazing friendship...</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="surprise-card" id="letter-surprise">
+                <div class="card-header">
+                    <h2><i class="fas fa-envelope-open-text"></i> A Letter For You</h2>
+                    <button class="reveal-button" onclick="revealSurprise('letter')">
+                        Reveal Surprise
+                    </button>
+                </div>
+                <div class="card-content hidden">
+                    <div class="letter-container">
+                        <div class="envelope">
+                            <div class="envelope-flap"></div>
+                            <div class="envelope-content">
+                                <div class="letter">
+                                    <div class="letter-content">
+                                        <h3>Oyy Tejuuu!,</h3>
+                                        <p>last Letter alle bala helana antha ankonnde. But alige bala dhodudhu aythuu. Nannige gothu
+                                            Bala cringe aythu antha. But en madli nan cringe madthini. En gotha nan enginnering life two 
+                                            phases idhhe, adhu before getting close to teju after getting close to teju. yake antha last letter alle 
+                                            helini adhu nan na care madovru nin bitre yaru illa antha. First time nannige oblu care madidre hengiruthey 
+                                            antha gothaythu. till nin meet agothanka i miss my mom a lot. But after meeting you and getting close to you
+                                            i doesn't feel I am far away from my mom. Nannige comfort andre place, things, facility alla. Its the person
+                                            and you are the one. nin idree saku innu yaaru beda antha helthinalla adhu actually words from my heart bartha bartha
+                                            bala connect agini teju nin jothe. Ivaglu type madbekadre halu barthidhe... nin bandu nan jothe iraa aa 2 days koskara
+                                            full week wait madthaa irthinii gothaa.. nin nodidre avr jothehogbeku ivru kardre antha hokthiyaa nannige heng iruthey bala 
+                                            bejar aguthey. solpa nan bagge nu yochane madee pleaseeee🥺🥺🥺. Yar irtharo irallo gothilla teju but i can tell you one thing 
+                                            nan anthu ee full world ninige against idru nin side ea irthinii. This you know well!! but nanu bala madini ninnige bejar madini
+                                            avru nodthare beda ivaga alla antha yarigoo edurkondu nin jothe irodhu bitini adhukelle nin nan mele bejar madkonthiya.
+                                            yaaroo beku avru illa ivruu hinge anthaa halthiyaa bitree nin idhiyaa biduu vishnu nan koskara antha ond sathi adru bandhu 
+                                            kai idkondiyaa nandu illa . yake nan kodthidhu sakaagthilla beku indree innu kodthini. Ondh vishaya nenp idkoo teju I always 
+                                            there for you at any cost andhra alli idhinaa ond call vishnu nin beku antha ond call madu eli idru barthini. But nannige
+                                            ond bekithu nan jothe ne iru pleaseeee🥺🥺🥺 nan bala possesive , obssesed and sensitive chiku vishaya ge bala bejar aguthye.
+                                            Nannige nin bitree yaaru idhare helu ivaga indha yaaru mundhe adru bandu mathadsu yarigu edralla no fear nothing. let them cry
+                                            why should I care when I have you. Gothu nan ninnige astu important alla antha but nin anthu nannige bala important.
+                                            Pleasee ivaga indha nan jothe nee iruuuuuu. daily ond call bandhaga sigadhu hangee please nannige igonre madbeda. Nothing in the 
+                                            world make me hate you Tejuuu.
+                                        </p>
+                                        <p>Thank you for being you - for your warmth, your wisdom, and your wonderful heart. You make the world a better place just by being in it.</p>
+                                        <p class="signature">With all my love and gratitude,<br>Your vishnu</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <p>Made with ❤️ just for you</p>
+            <div class="footer-hearts"></div>
+        </footer>
+    </div>
+
+    <audio id="friendship-song" loop>
+        <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+    </audio>
+
+    <script src="surprises.js"></script>
+</body>
+</html> 

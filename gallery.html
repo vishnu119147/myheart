@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Special Moments ❤️</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="gallery.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="heart-container">
+            <div class="heart"></div>
+        </div>
+
+        <header class="gallery-header">
+            <h1 class="title">Our Special Moments</h1>
+            <p class="subtitle">Every memory with you is precious</p>
+            <a href="index.html" class="back-button">
+                <i class="fas fa-arrow-left"></i> Back to Home
+            </a>
+        </header>
+
+        <main class="gallery-content">
+            <div class="gallery-filters">
+                <button class="filter-button active" data-filter="all">All Memories</button>
+                <button class="filter-button" data-filter="special">Special Moments</button>
+                <button class="filter-button" data-filter="fun">Fun Times</button>
+            </div>
+
+            <div class="gallery-grid">
+                <div class="gallery-item" data-category="special">
+                    <div class="gallery-card">
+                        <img src="pic17.jpg" alt="Beach Day">
+                        <div class="gallery-caption">
+                            <h3>Sunset at the Beach</h3>
+                            <p>That magic of your presence made the beach look more special</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="fun">
+                    <div class="gallery-card">
+                        <img src="pic7.jpg" alt="Coffee Date">
+                        <div class="gallery-caption">
+                            <h3>Candle light Dinner</h3>
+                            <p>A Dinner cant be perfect than this</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="special">
+                    <div class="gallery-card">
+                        <img src="pic4.jpg" alt="Birthday Celebration">
+                        <div class="gallery-caption">
+                            <h3>The black dress</h3>
+                            <p>No one looks perfect in black but you👌</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="fun">
+                    <div class="gallery-card">
+                        <img src="pic11.jpg" alt="Concert Night">
+                        <div class="gallery-caption">
+                            <h3>Night star</h3>
+                            <p>Even the Stars aren't Beautiful as you in night sky </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="special">
+                    <div class="gallery-card">
+                        <img src="pic21.jpg" alt="Mountain Adventure">
+                        <div class="gallery-caption">
+                            <h3>The Beauty</h3>
+                            <p>Look! the stars are hiding behind you, as they wont compete with you</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="fun">
+                    <div class="gallery-card">
+                        <img src="pic12.jpg" alt="Road Trip">
+                        <div class="gallery-caption">
+                            <h3>The stare</h3>
+                            <p>The way you look at me, makes me feel like I'm the only one in this world</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="special">
+                    <div class="gallery-card">
+                        <img src="pic14.jpg" alt="Graduation Day">
+                        <div class="gallery-caption">
+                            <h3>the sun shine</h3>
+                            <p>you are gorgeous, even the sun cant compete with you</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="fun">
+                    <div class="gallery-card">
+                        <img src="pic3.jpg" alt="Party Night">
+                        <div class="gallery-caption">
+                            <h3>Strong_enough</h3>
+                            <p>you are strong enough to stole a man's heart</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="special">
+                    <div class="gallery-card">
+                        <img src="pic15.jpg" alt="Garden Day">
+                        <div class="gallery-caption">
+                            <h3>The goddess</h3>
+                            <p>How can someone Hate you, I would kill them for you</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="fun">
+                    <div class="gallery-card">
+                        <img src="pic10.jpg" alt="Art Gallery">
+                        <div class="gallery-caption">
+                            <h3>the flower</h3>
+                            <p>the flower is beautiful, but you are more beautiful</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="special">
+                    <div class="gallery-card">
+                        <img src="pic20.jpg" alt="Night Out">
+                        <div class="gallery-caption">
+                            <h3>Incomplete me</h3>
+                            <p>My gallery is incomplete without you</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="fun">
+                    <div class="gallery-card">
+                        <img src="pic9.jpg" alt="Summer Day">
+                        <div class="gallery-caption">
+                            <h3>The nature</h3>
+                            <p>The word nature is just a word, you are the nature</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <div id="full-image-modal" class="full-image-modal">
+            <div class="modal-content">
+                <span class="close-modal">&times;</span>
+                <img id="full-image" src="" alt="Full size image">
+                <div class="image-caption"></div>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <p>Made with ❤️ just for you</p>
+            <div class="footer-hearts"></div>
+        </footer>
+    </div>
+
+    <script src="gallery.js"></script>
+</body>
+</html> 
